@@ -4,10 +4,14 @@ body{
 	background: #f8f8f8;
 	color:#333;
 }
+li{
+	list-style: none;
+}
 #wrapper{
 	width:100%;
 	header{
 		width:100%;
+		clear:both;
 		#logo{
 			background:#333;
 			color:#fff;
@@ -16,9 +20,35 @@ body{
 			padding:5px;
 			float:left;
 		}
-		#profile{
+		.logGroup,#profile,.guest,.tour{
 			float:right;
-			
+			margin:5px 10px;
+		}
+	}
+	#container{
+		clear:both;
+		.citySelection{
+			position:absolute;
+			width:600px;
+			height:300px;
+			top:50%;
+			left:50%;
+			margin:-150px 0 0 -300px;
+			background:#fff;
+			border:3px solid #ccc;
+			border-radius:4px;
+			display:none;
+			.title{
+				font-size: 14px;
+				font-weight: bold;
+				text-align: center;
+			}
+			li.city{
+				float:left;
+				width:30%;
+				padding:1%;
+				text-align: center;
+			}
 		}
 	}
 }
