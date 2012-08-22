@@ -27,6 +27,8 @@ li{
 	height:100%;
 	header{
 		width:100%;
+		overflow: hidden;
+		background: #EEE;
 		clear:both;
 		#logo{
 			background:#333;
@@ -90,12 +92,13 @@ li{
 			border:3px solid #ccc;
 			border-radius:4px;
 			display:none;
+			z-index: 1;
 			.title{
 				font-size: 14px;
 				font-weight: bold;
 				text-align: center;
 			}
-			li.city{
+			a.city{
 				float:left;
 				width:30%;
 				padding:1%;
