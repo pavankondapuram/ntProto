@@ -1,14 +1,16 @@
 dojo.ready(function(){
 
-	require(["scripts/dojo/dojo/NodeList-manipulate"]);
+	require(["/scripts/dojo/dojo/NodeList-manipulate.js"], 
+		function(){
+			/*dojo.forEach(dojo.query('a.city'),function(){
+				dojo.query(this).attr('href',dojo.query(this).innerHTML());
+			});*/
+			dojo.query('a.city').attr('href',dojo.query(this).innerHTML());
+		}
+	);
 
 	var selectedCity = '';
-
-
-	array.forEach(
-		var selectedCity = dojo.query('.citySelection a').innerHTML();
-		dojo.query('.citySelection a').attr('href',selectedCity);
-	);
+	
 
 	dojo.query('.citySelection').style('display','block');
 
